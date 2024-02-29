@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="scss/main.css">
+  <script src="/scripts/chart.js" defer></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+
+<body class="wrapper">
+
+  <main class="main-container">
+    <h1 class="sr-only">Main content</h1>
+    <div class="balance">
+      <div class="balance__text-container">
+        <h2 class="balance__heading">My balance</h2>
+        <p class="balance__value">921.48</p>
+      </div>
+      <div class="balance__logo-container">
+        <img src="./images/logo.svg" alt="">
+      </div>
+    </div>
+    <div class="spending">
+      <h1 class="spending__heading">Spending - Last 7 days</h1>
+      <div class="chart">
+        <div class="chart__bar-container">
+          <p class="chart__day">mon</p>
+          <div class="chart__bar"></div>
+        </div>
+        <div class="chart__bar-container">
+          <p class="chart__day">mon</p>
+          <div class="chart__bar"></div>
+        </div>
+        <div class="chart__bar-container">
+          <p class="chart__day">mon</p>
+          <div class="chart__bar"></div>
+        </div>
+        <div class="chart__bar-container">
+          <p class="chart__day">mon</p>
+          <div class="chart__bar"></div>
+        </div>
+        <div class="chart__bar-container">
+          <p class="chart__day">mon</p>
+          <div class="chart__bar"></div>
+        </div>
+        <div class="chart__bar-container">
+          <p class="chart__day">mon</p>
+          <div class="chart__bar"></div>
+        </div>
+        <div class="chart__bar-container">
+          <p class="chart__day">mon</p>
+          <div class="chart__bar"></div>
+        </div>
+
+        <!-- mon
+        tue
+        wed
+        thu
+        fri
+        sat
+        sun -->
+      </div>
+      <hr class="spending__dividor" />
+      <div class="summary">
+        <p class="summary__total">
+          Total this month <span>478.33</span>
+        </p>
+        <div>
+          <p class="summary__comparaison">
+            <span>2.4</span> from last month
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.balance {
+    background-color: $soft-red;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 4rem;
+    margin-bottom: 3rem;
+
+    border-radius: 2rem;
+}
+.balance__text-container {
+    color: $very-pale-orange;
+}
+.balance__heading {
+    margin-bottom: 1rem;
+}
+.balance__value::before {
+    content: "$";
+}

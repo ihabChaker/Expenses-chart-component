@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "DM Sans", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.wrapper {
+  background-color: hsl(27, 66%, 92%);
+  display: grid;
+  place-content: center;
+}
+
+.main-container {
+  margin-inline: 1rem;
+  max-width: 55rem;
+}
+@media screen and (min-width: 800px) {
+  .main-container {
+    margin-inline: 0;
+    max-width: initial;
+    width: 55rem;
+  }
+}
+
+[class*=sr-only] {
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.balance__heading {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.balance__value {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.spending__heading {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.chart__day {
+  font-size: 1.4rem;
+}
+
+.summary__total {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.summary__total span {
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.summary__comparaison {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.summary__comparaison span {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.balance {
+  background-color: hsl(10, 79%, 65%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  margin-bottom: 3rem;
+  border-radius: 2rem;
+}
+
+.balance__text-container {
+  color: hsl(33, 100%, 98%);
+}
+
+.balance__heading {
+  margin-bottom: 1rem;
+}
+
+.balance__value::before {
+  content: "$";
+}
+
+.chart {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 2rem;
+  justify-content: end;
+  margin-bottom: 4rem;
+}
+
+.chart__bar-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.chart__bar {
+  background-color: hsl(10, 79%, 65%);
+  height: 150px;
+  border-radius: 0.5rem;
+}
+.chart__bar:hover, .chart__bar:active {
+  background-color: hsl(186, 34%, 60%);
+}
+
+.chart__day {
+  text-align: center;
+  color: hsl(28, 10%, 53%);
+}
+
+.spending {
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 2rem;
+  padding: 2rem 4rem;
+}
+
+.spending__heading {
+  color: hsl(25, 47%, 15%);
+  margin-bottom: 5rem;
+}
+
+.summary {
+  padding-block: 4rem;
+}
+
+.summary__total > span::before {
+  content: "$";
+}
+
+.summary__comparaison span::before {
+  content: "+";
+}
+
+.summary__comparaison span::after {
+  content: "%";
+}
+
+.summary {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.summary__total,
+.summary__comparaison {
+  color: hsl(28, 10%, 53%);
+}
+.summary__total span,
+.summary__comparaison span {
+  color: hsl(25, 47%, 15%);
+  display: block;
+}
+
+.summary__comparaison {
+  text-align: end;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+.chart {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 2rem;
+    justify-content: end;
+    margin-bottom: 4rem;
+}
+.chart__bar-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    gap: 2rem;
+}
+.chart__bar {
+    background-color: $soft-red;
+    height: 150px;
+    border-radius: 0.5rem;
+    &:hover,
+    &:active {
+        background-color: $cyan;
+    }
+}
+.chart__day {
+    text-align: center;
+    color: $medium-brown;
+}
