@@ -2,23 +2,56 @@
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
-    gap: 2rem;
+    gap: 1rem;
+    @media screen and (min-width: 800px) {
+        gap: 2rem;
+    }
     justify-content: end;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    @media screen and (min-width: 800px) {
+        margin-bottom: 4rem;
+    }
 }
 .chart__bar-container {
     display: flex;
     flex-direction: column-reverse;
     justify-content: end;
-    gap: 2rem;
+    gap: 0.3rem;
+    @media screen and (min-width: 640px) {
+        gap: 1rem;
+    }
 }
 .chart__bar {
     background-color: $soft-red;
-    height: 150px;
+    height: var(--bar-height);
     border-radius: 0.5rem;
+    transition: all 0.4s;
     &:hover,
     &:active {
         background-color: $cyan;
+    }
+    position: relative;
+    &::before {
+        position: absolute;
+        top: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 130%;
+        padding-block: 8px;
+        border-radius: 0.4rem;
+
+        text-align: center;
+
+        content: var(--amount);
+        background-color: $dark-brown;
+        color: $very-pale-orange;
+        transition: all 0.4s;
+
+        display: none;
+    }
+    &:is(:hover, :active)::before {
+        display: block;
     }
 }
 .chart__day {

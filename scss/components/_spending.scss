@@ -2,8 +2,10 @@
     background-color: $very-pale-orange;
 
     border-radius: 2rem;
-
-    padding: 2rem 4rem;
+    padding: 1rem 2rem;
+    @media screen and (min-width: 800px) {
+        padding: 2rem 4rem;
+    }
 }
 .spending__heading {
     color: $dark-brown;
@@ -37,4 +39,8 @@
 }
 .summary__comparaison {
     text-align: end;
+}
+
+.spending__dividor {
+    color: $medium-brown;
 }
